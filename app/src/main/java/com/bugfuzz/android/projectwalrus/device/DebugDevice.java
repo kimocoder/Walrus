@@ -27,6 +27,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.bugfuzz.android.projectwalrus.R;
 import com.bugfuzz.android.projectwalrus.card.carddata.CardData;
+import com.bugfuzz.android.projectwalrus.card.carddata.EMCardData;
 import com.bugfuzz.android.projectwalrus.card.carddata.HIDCardData;
 import com.bugfuzz.android.projectwalrus.card.carddata.MifareCardData;
 
@@ -35,9 +36,9 @@ import java.lang.reflect.InvocationTargetException;
 @CardDevice.Metadata(
         name = "_Debug Device",
         iconId = R.drawable.drawable_debug_device,
-        supportsRead = {HIDCardData.class, MifareCardData.class},
-        supportsWrite = {HIDCardData.class, MifareCardData.class},
-        supportsEmulate = {HIDCardData.class, MifareCardData.class}
+        supportsRead = {HIDCardData.class, MifareCardData.class, EMCardData.class},
+        supportsWrite = {HIDCardData.class, MifareCardData.class, EMCardData.class},
+        supportsEmulate = {HIDCardData.class, MifareCardData.class, EMCardData.class}
 )
 public class DebugDevice extends CardDevice {
 
