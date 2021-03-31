@@ -113,7 +113,8 @@ public class WalrusApplication extends Application {
 
         context = getApplicationContext();
 
-        PreferenceManager.setDefaultValues(this, R.xml.preferences_chameleon_mini, false);
+        PreferenceManager.setDefaultValues(this, R.xml.preferences_chameleon_mini_rev_g, false);
+        PreferenceManager.setDefaultValues(this, R.xml.preferences_chameleon_mini_rev_e_rebooted, false);
 
         HIDCardData.setup(context);
         EMCardData.setup(context);
